@@ -10,14 +10,10 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
     <body>
-        <div id="one">
-            <h1>@{{ user.name }}</h1>
+        <div id="app">
+            <coupon v-model="coupon"></coupon>
         </div>
 
-        <div id="two">
-            <h1>@{{ user.name }}</h1>
-        </div>
-
-        <script src="{{ mix('/js/shared-app.js') }}"></script>
+        <script src="{{ mix('/js/custom-input.js') }}"></script>
     </body>
 </html>
