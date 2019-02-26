@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import axios from 'axios';
 import Form from './core/Form';
-import Example from './components/Example';
+import Example from './components/ExampleComponent';
 
 window.axios = axios;
 window.Form = Form;
