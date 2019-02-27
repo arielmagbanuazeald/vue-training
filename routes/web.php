@@ -19,5 +19,11 @@ Route::get('/spa', function () {
     return view('spa');
 });
 
+
+Route::get('/statuses', function ()
+{
+    return App\Status::latest()->with('user')->get();
+});
+
 Route::get('projects/create', 'ProjectsController@create');
 Route::post('projects', 'ProjectsController@store');
