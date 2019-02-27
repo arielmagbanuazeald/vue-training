@@ -8,7 +8,7 @@
                             {{ status.user.name }} said ...
                         </p>
                         <p>
-                            {{ postedOn(status) }}
+                            {{ status.created_at | ago }}
                         </p>
                     </div>
 
@@ -35,15 +35,15 @@
             }
         },
 
+        filters: {
+            ago(date) {
+                return moment(date).fromNow();
+            }
+        },
+
         created() {
             axios.get('/statuses')
                 .then(({data}) => this.statuses = data);
-        },
-
-        methods: {
-            postedOn(status) {
-                return moment(status.created_at).fromNow();
-            }
         }
     }
 </script>

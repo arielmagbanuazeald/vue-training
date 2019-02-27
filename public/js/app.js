@@ -1798,6 +1798,11 @@ __webpack_require__.r(__webpack_exports__);
       statuses: []
     };
   },
+  filters: {
+    ago: function ago(date) {
+      return moment__WEBPACK_IMPORTED_MODULE_0___default()(date).fromNow();
+    }
+  },
   created: function created() {
     var _this = this;
 
@@ -1805,11 +1810,6 @@ __webpack_require__.r(__webpack_exports__);
       var data = _ref.data;
       return _this.statuses = data;
     });
-  },
-  methods: {
-    postedOn: function postedOn(status) {
-      return moment__WEBPACK_IMPORTED_MODULE_0___default()(status.created_at).fromNow();
-    }
   }
 });
 
@@ -19954,7 +19954,7 @@ var render = function() {
               _c("p", [
                 _vm._v(
                   "\n                        " +
-                    _vm._s(_vm.postedOn(status)) +
+                    _vm._s(_vm._f("ago")(status.created_at)) +
                     "\n                    "
                 )
               ])
