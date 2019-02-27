@@ -112,8 +112,6 @@ class Form {
      * @param {object} data
      */
     onSuccess(data) {
-        alert(data.message); // temporary
-
         this.reset();
     }
 
@@ -121,10 +119,10 @@ class Form {
     /**
      * Handle a failed form submission.
      *
-     * @param {object} errors
+     * @param response
      */
-    onFail(errors) {
-        this.errors.record(errors);
+    onFail(response) {
+        this.errors.record(response.errors);
     }
 }
 

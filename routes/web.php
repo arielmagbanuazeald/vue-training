@@ -20,10 +20,13 @@ Route::get('/spa', function () {
 });
 
 
-Route::get('/statuses', function ()
-{
-    return App\Status::latest()->with('user')->get();
-});
+//Route::get('/statuses', function ()
+//{
+//    return App\Status::latest()->with('user')->get();
+//});
+
+Route::get('/statuses', 'StatusController@index');
+Route::post('/statuses', 'StatusController@store');
 
 Route::get('projects/create', 'ProjectsController@create');
 Route::post('projects', 'ProjectsController@store');
