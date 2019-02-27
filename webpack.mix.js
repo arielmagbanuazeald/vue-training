@@ -13,7 +13,9 @@ const mix = require('laravel-mix');
 mix.js('resources/js/app.js', 'public/js')
     .js('resources/js/shared-app.js', 'public/js')
     .js('resources/js/custom-input.js', 'public/js')
+    .js('resources/js/router-app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
+    .sass('resources/sass/router.scss', 'public/css')
     .version();
 
 if (mix.inProduction()) {

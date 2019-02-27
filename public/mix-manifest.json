@@ -1,4 +1,8 @@
 {
-    "/js/app.js": "/js/app.js?id=b0527a0478d504c5ccc7",
-    "/css/app.css": "/css/app.css?id=36750ffd35d3e88a5b46"
+    "/js/app.js": "/js/app.js?id=d0c5871a3ac8cdb7e1e2",
+    "/css/app.css": "/css/app.css?id=36750ffd35d3e88a5b46",
+    "/css/router.css": "/css/router.css?id=d41d8cd98f00b204e980",
+    "/js/custom-input.js": "/js/custom-input.js?id=1ab32a26f50f66fe819c",
+    "/js/router-app.js": "/js/router-app.js?id=cd0e50f291f345d6c7fa",
+    "/js/shared-app.js": "/js/shared-app.js?id=23ca6352d58bc11f0317"
 }
