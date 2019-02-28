@@ -31,21 +31,12 @@
     "vue-template-compiler": "^2.6.7"
   },
   "dependencies": {
+    "flickity": "^2.2.0",
     "moment": "^2.24.0"
   },
   "name": "vue-laravel-test",
   "version": "1.0.0",
   "main": "webpack.mix.js",
-  "babel": {
-    "presets": [
-      "es2015"
-    ]
-  },
-  "ava": {
-    "require": [
-      "babel-register"
-    ]
-  },
   "directories": {
     "test": "tests"
   },

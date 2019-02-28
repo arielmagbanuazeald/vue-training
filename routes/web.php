@@ -19,6 +19,10 @@ Route::get('/spa', function () {
     return view('spa');
 });
 
+Route::get('/carousel', function () {
+    return view('carousel');
+});
+
 
 //Route::get('/statuses', function ()
 //{
