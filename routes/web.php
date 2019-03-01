@@ -23,6 +23,10 @@ Route::get('/carousel', function () {
     return view('carousel');
 });
 
+Route::get('/counts', function () {
+    return view('counts');
+});
+
 
 //Route::get('/statuses', function ()
 //{
